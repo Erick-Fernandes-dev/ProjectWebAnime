@@ -1,0 +1,68 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+    <form class="card" method="POST" action="/anime">
+        <section class="avatar" style="background: url(https://images6.alphacoders.com/749/thumbbig-749967.jpg) no-repeat center center / cover"></section>
+        <section class="details">
+            <h3>Animes</h3>
+            <div class="item">
+                <div>Avatar url</div>
+                <div>
+                    <input type="url" name="url" placeholder="https://">
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Nome</div>
+                <div>
+                    <input type="text" name="name" placeholder="Nome">
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Data de lançamento</div>
+                <div>
+                    <input type="date" name="date">
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Gêneros</div>
+                <div>
+                    <select name="type">
+                        <option value="s/t">S/T</option>
+                        <option value="Ação">Ação</option>
+                        <option value="Ação">Terror</option>
+                        <option value="Ação">Hentai</option>
+                        <option value="Ação">Echi</option>
+                        <option value="Ação">romance</option>
+                        <option value="Ação">Escolar</option>
+                        <option value="Ação">Shonnen</option>
+                        <option value="Ação">Aventura</option>
+                        <option value="Ação">Sennin</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="item" checked="">
+                <div>Idade</div>
+                <div>
+                    <span><input type="radio" name="age">12</span>
+                    <span><input type="radio" name="age">14</span>
+                    <span><input type="radio" name="age">16</span>
+                    <span><input type="radio" name="age">18</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Comentário</div>
+                <textarea name="F_comentario" cols="50" rows="5"></textarea>
+            </div>
+
+            <button type="submit">Salvar</button>
+
+        </section>
+
+    </form>
+
+{% endblock %}

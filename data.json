@@ -1,0 +1,22 @@
+{
+    "animes": [
+        {
+            "id": 1,
+            "url": "https://google.com",
+            "name": "Erick",
+            "date": 1613732166270,
+            "type": "Ação",
+            "age": "on",
+            "F_comentario": "Massa"
+        },
+        {
+            "id": 2,
+            "url": "https://google.com",
+            "name": "Erick Fernandes de Farias Santos",
+            "date": 1709510400000,
+            "type": "Ação",
+            "age": "on",
+            "F_comentario": "qqqqq"
+        }
+    ]
+}
